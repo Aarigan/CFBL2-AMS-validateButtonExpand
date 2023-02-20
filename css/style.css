@@ -90,7 +90,7 @@ body {
 .buttons .button2 {
   position: relative;
   display: inline-block;
-  padding: 0.938em 1.563em;
+  padding: .938em 1.563em;
   width: 3.75em;
   height: 3.75em;
   font-family: 'Poppins', sans-serif;
