@@ -111,7 +111,7 @@ body {
 
 .button2:hover {
   width: 12.5em;
-  transition-delay: .5em;
+  transition-delay: .5s;
 }
 
 .button2::before {
