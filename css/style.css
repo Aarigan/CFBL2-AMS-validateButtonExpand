@@ -1,0 +1,142 @@
+/* Import Poppins - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --clr-bkg: #2f02e0e7;
+  --clr-wht: #fff;
+  --clr-shdw: #00000033;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.563em;
+  border: none;
+  outline: none;
+}
+
+/* Button 1 */
+
+.buttons .button1 {
+  position: relative;
+  display: inline-block;
+  padding: .938em 1.563em;
+  width: 3.75em;
+  height: 3.75em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: .063em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: center;
+  font-weight: bold;
+  color: var(--clr-wht);
+  border: .063em solid var(--clr-bkg);
+  background-color: var(--clr-bkg);
+  box-shadow: 0 .625em .625em var(--clr-shdw);
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.button1:hover {
+  width: 12.5em;
+  transition-delay: .5s;
+}
+
+.button1::before {
+  content: '';
+  position: absolute;
+  left: 1.25em;
+  width: 1.25em;
+  height: .75em;
+  border-top: .188em solid var(--clr-wht);
+  border-right: .188em solid var(--clr-wht);
+  transform: rotate(125deg);
+}
+
+.button1 span {
+  visibility: hidden;
+  opacity: 0;
+  padding-left: 2.5em;
+  white-space: nowrap;
+  transition-delay: .5s;
+  transform: translate(-1.875em);
+}
+
+.button1:hover span {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: .75s;
+  transform: translateX(0.625em);
+}
+
+/* Button 2 rounded */
+
+.buttons .button2 {
+  position: relative;
+  display: inline-block;
+  padding: 0.938em 1.563em;
+  width: 3.75em;
+  height: 3.75em;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1em;
+  letter-spacing: .063em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: center;
+  font-weight: bold;
+  color: var(--clr-wht);
+  border: .063em solid var(--clr-bkg);
+  border-radius: 1.875em;
+  box-shadow: 0 .625em .625em var(--clr-shdw);
+  background-color: var(--clr-bkg);
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.button2:hover {
+  width: 12.5em;
+  transition-delay: .5em;
+}
+
+.button2::before {
+  content: '';
+  position: absolute;
+  left: 1.125em;
+  width: 1.25em;
+  height: .75em;
+  border-top: .188em solid var(--clr-wht);
+  border-right: .188em solid var(--clr-wht);
+  transform: rotate(125deg);
+}
+
+.button2 span {
+  visibility: hidden;
+  opacity: 0;
+  padding-left: 2.5em;
+  white-space: nowrap;
+  transition-delay: .5s;
+  transform: translate(-1.875em);
+}
+
+.button2:hover span {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: .75s;
+  transform: translateX(.625em);
+}
