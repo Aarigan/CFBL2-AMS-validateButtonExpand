@@ -82,7 +82,7 @@ body {
   visibility: visible;
   opacity: 1;
   transition-delay: .75s;
-  transform: translateX(0.625em);
+  transform: translateX(.625em);
 }
 
 /* Button 2 rounded */
