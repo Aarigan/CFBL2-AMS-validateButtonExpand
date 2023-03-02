@@ -1,13 +1,12 @@
 /* Import Poppins - Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 :root {
   --clr-bkg: #2f02e0e7;
-  --clr-bkg0: #333;
+  --clr-bkg0: #5f5f5f;
   --clr-wht: #fff;
   --clr-shdw: #00000033;
 }
-
 
 *,
 *::before,
@@ -51,6 +50,7 @@ body {
   color: var(--clr-wht);
   background-color: var(--clr-bkg0);
   box-shadow: 0 .625em .625em var(--clr-shdw);
+  border: none;
   transition: all .5s ease;
   cursor: pointer;
 }
@@ -58,8 +58,8 @@ body {
 .button1:hover {
   width: 12.5em;
   transition-delay: .5s;
-  background-color: var(--clr-bkg);
   border: .063em solid var(--clr-bkg);
+  background-color: var(--clr-bkg);
 }
 
 .button1::before {
@@ -79,14 +79,25 @@ body {
   padding-left: 2.5em;
   white-space: nowrap;
   transition-delay: .5s;
-  transform: translate(-1.875em);
 }
 
 .button1:hover span {
   visibility: visible;
   opacity: 1;
   transition-delay: .75s;
-  transform: translateX(.625em);
+}
+
+.button1:hover span::before {
+  content: 'validate';
+  position: absolute;
+  left: 40%;
+}
+
+.button1:hover span::after {
+  content: '';
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
 }
 
 /* Button 2 rounded */
@@ -94,7 +105,7 @@ body {
 .buttons .button2 {
   position: relative;
   display: inline-block;
-  padding: .938em 1.563em;
+  padding: 0.938em 1.563em;
   width: 3.75em;
   height: 3.75em;
   font-family: 'Poppins', sans-serif;
@@ -108,6 +119,7 @@ body {
   border-radius: 1.875em;
   box-shadow: 0 .625em .625em var(--clr-shdw);
   background-color: var(--clr-bkg0);
+  border: none;
   transition: all .5s ease;
   cursor: pointer;
 }
@@ -115,8 +127,8 @@ body {
 .button2:hover {
   width: 12.5em;
   transition-delay: .5s;
-  background-color: var(--clr-bkg);
   border: .063em solid var(--clr-bkg);
+  background-color: var(--clr-bkg);
 }
 
 .button2::before {
@@ -144,4 +156,17 @@ body {
   opacity: 1;
   transition-delay: .75s;
   transform: translateX(.625em);
+}
+
+.button2:hover span::before {
+  content: 'validate';
+  position: absolute;
+  left: 40%;
+}
+
+.button2:hover span::after {
+  content: '';
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
 }
