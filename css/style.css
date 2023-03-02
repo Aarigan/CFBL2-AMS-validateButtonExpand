@@ -48,8 +48,6 @@ body {
   vertical-align: center;
   font-weight: bold;
   color: var(--clr-wht);
-  border: .063em solid var(--clr-bkg);
-  background-color: var(--clr-bkg);
   box-shadow: 0 .625em .625em var(--clr-shdw);
   transition: all .5s ease;
   cursor: pointer;
@@ -58,6 +56,8 @@ body {
 .button1:hover {
   width: 12.5em;
   transition-delay: .5s;
+  background-color: var(--clr-bkg);
+  border: .063em solid var(--clr-bkg);
 }
 
 .button1::before {
@@ -103,10 +103,8 @@ body {
   vertical-align: center;
   font-weight: bold;
   color: var(--clr-wht);
-  border: .063em solid var(--clr-bkg);
   border-radius: 1.875em;
   box-shadow: 0 .625em .625em var(--clr-shdw);
-  background-color: var(--clr-bkg);
   transition: all .5s ease;
   cursor: pointer;
 }
@@ -114,6 +112,8 @@ body {
 .button2:hover {
   width: 12.5em;
   transition-delay: .5s;
+  background-color: var(--clr-bkg);
+  border: .063em solid var(--clr-bkg);
 }
 
 .button2::before {
